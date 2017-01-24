@@ -11,15 +11,38 @@
 <body>
 	<div class="container">
 		<!-- row 1: navigation -->
-		<nav class="row">
-			<ul  class="nav nav-tabs nav-justified">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li class="active"><a>Services</a></li>
-				<li><a href="photo-contacts.html">Photo Gallery</a></li>
-				<li><a href="photo-contacts.html#contact">Contact</a></li>  
-			</ul>  
-		</nav>
+		<div class="row">
+			<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="glyphicon glyphicon-arrow-down"></span>
+							MENU							
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">Home</a></li>
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown">About <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="about.html">About</a></li>
+									<li><a href="about.html#winthrop">Dr. Winthrop</a></li>
+									<li><a href="about.html#chase">Dr. Chase</a></li>
+									<li><a href="about.html#sanders">Dr. Sanders</a></li>
+								</ul>                    
+							</li>
+							<li class="active"><a>Services</a></li>
+							<li><a href="photo-contacts.html">Photo Gallery</a></li>
+							<li><a href="photo-contacts.html#contact">Contact</a></li>  
+						</ul>
+					</div> 
+				</div> 
+			</nav>
+		</div>
+
+		<!-- row 2 -->
 
 		<!-- row 2: header -->
 		<header class="row">
@@ -49,30 +72,41 @@
 					<div class="clearfix visible-xs visible-lg"></div>
 
 					<!--  Togglable tabs -->					
-					<!-- list navigation for tabs -->					
-					<ul>
-						<li><a href="#"><span class="glyphicon glyphicon-pushpin"></span> Vaccinations</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-ok"></span> Checkups</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-heart"></span> Senior Pets</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-cutlery"></span> Diet Plans</a></li>
+					<!-- list navigation for tabs -->
+
+					<ul class="nav nav-tabs">
+						<li><a href="#vaccinations" data-toggle="tab"><span class="glyphicon glyphicon-pushpin"></span> Vaccinations</a></li>
+						<li><a href="#checkups" data-toggle="tab"><span class="glyphicon glyphicon-ok"></span> Checkups</a></li>
+						<li><a href="#senior" data-toggle="tab"><span class="glyphicon glyphicon-heart"></span> Senior Pets</a></li>
+						<li><a href="#diet" data-toggle="tab"><span class="glyphicon glyphicon-cutlery"></span> Diet Plans</a></li>
 					</ul>
 
 					<!-- text for each callout -->
 					<!-- Vaccinations -->
-					<p>Dogs and cats are susceptible to a variety of illnesses that can be completely prevented by following the appropriate vaccination schedule.</p>
-					<p><a href="#" class="btn btn-info">Read more >></a></p>
+					<div class="tab-content">
+						<div id="vaccinations" class="tab-pane fade active in">
+							<p>Dogs and cats are susceptible to a variety of illnesses that can be completely prevented by following the appropriate vaccination schedule.</p>
+							<p><a href="#" class="btn btn-info">Read more >></a></p>
+						</div>
 
-					<!-- Checkups -->
-					<p>Regular checkups are a key factor in pet wellness, and can often unearth problems that could lead to health issues down the road.  </p>
-					<p><a href="#" class="btn btn-info">Read more >></a></p>
+						<!-- Checkups -->
+						<div id="checkups" class="tab-pane fade">
+							<p>Regular checkups are a key factor in pet wellness, and can often unearth problems that could lead to health issues down the road.  </p>
+							<p><a href="#" class="btn btn-info">Read more >></a></p>
+						</div>
 
-					<!-- Senior Pets -->
-					<p>Senior pets generally require more medical attention than their younger counterparts, just as senior humans do. So when is a pet considered “senior”? </p>
-					<p><a href="#" class="btn btn-info">Read more >></a></p>
+						<!-- Senior Pets -->
+						<div id="senior" class="tab-pane fade">
+							<p>Senior pets generally require more medical attention than their younger counterparts, just as senior humans do. So when is a pet considered “senior”? </p>
+							<p><a href="#" class="btn btn-info">Read more >></a></p>
+						</div>
 
-					<!-- Diet Plans -->
-					<p>Wisdom veterinarians have all had extensive training in pet nutrition and are your best resources when considering changing your pet’s diet. </p>
-					<p><a href="#" class="btn btn-info">Read more >></a></p>
+						<!-- Diet Plans -->
+						<div id="diet" class="tab-pane fade">
+							<p>Wisdom veterinarians have all had extensive training in pet nutrition and are your best resources when considering changing your pet’s diet. </p>
+							<p><a href="#" class="btn btn-info">Read more >></a></p>
+						</div>
+					</div>
 					<!-- end Togglable tabs -->
 
 				</article>			
@@ -114,5 +148,10 @@
 	<!-- javascript -->
 	<script src="js/jquery-latest.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$('.nav-tabs a:first').tab('show');
+		});
+	</script>
 </body>
 </html>

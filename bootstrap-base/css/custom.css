@@ -12,12 +12,11 @@ footer {
 }
 
 .glyphicon {
-	color: #cdae51;
+	color: #3F2B22;
 }
 
-.glyphicon-pushpin, 
-.glyphicon-heart {
-	color: #3F2B22;
+.active .glyphicon {
+	color: #cdae51;
 }
 
 .pull-right.img-responsive {
@@ -65,15 +64,25 @@ footer {
 	font-weight: bold;
 	border-color: #9d9d9d;
 }
+
 .navbar-inverse .navbar-toggle:hover {
 	background-color: #ddd;
 	border-color: #ddd;	
 	color: #222;
 
 }
+
 .navbar-inverse .navbar-toggle .glyphicon {	
 	padding-right: 0.5em;
 }
+
 .navbar-inverse .navbar-toggle:hover .glyphicon {	
 	color: #222;
+}
+
+.tab-pane {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;	
+	border-bottom: 1px solid #ddd;
+	padding: 0.8em;
 }
