@@ -86,3 +86,7 @@ footer {
 	border-bottom: 1px solid #ddd;
 	padding: 0.8em;
 }
+
+.tab-content {
+	margin-bottom: 1.5em;
+}
