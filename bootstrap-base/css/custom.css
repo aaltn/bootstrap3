@@ -11,6 +11,7 @@ footer {
 .glyphicon {
 	color: #cdae51;
 }
+
 .glyphicon-pushpin, 
 .glyphicon-heart {
 	color: #3F2B22;
@@ -21,9 +22,9 @@ footer {
 }
 
 .btn-info {
-    background-color: #cdae51;
-    border-color: #3F2B22;
-    color: #FFFFFF;
+	background-color: #cdae51;
+	border-color: #3F2B22;
+	color: #FFFFFF;
 }
 
 .btn-info:hover,
@@ -31,16 +32,21 @@ footer {
 .btn-info:active,
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
-  color: #ffffff;
-  background-color: #3F2B22;
-  border-color: #333;
+	color: #ffffff;
+	background-color: #3F2B22;
+	border-color: #333;
 }
 
 .panel-default {
-    border-color: #3F2B22;
+	border-color: #3F2B22;
 }
+
 .panel-default > .panel-heading {
-    background-color: #cdae51;
-    border-color: #3F2B22;
-    color: #fff;
+	background-color: #cdae51;
+	border-color: #3F2B22;
+	color: #fff;
+}
+
+.breadcrumb > li + li:before {
+  content: none;
 }
