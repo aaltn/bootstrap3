@@ -30,6 +30,27 @@
 	text-decoration: underline;
 }
 
+/* styling thumbnails and modals */
+
+.btn-primary { 
+	background-color: #602F8D; 
+	border-color: #602F8D; 
+}  
+.btn-primary:hover, 
+.btn-primary:focus,  
+.btn-primary:active { 
+	background-color: #53297A; 
+} 
+.modal-body .pull-left { 
+	padding-right: 1em; 
+} 
+.modal-body .pull-right { 
+	padding-left: 1em; 
+} 
+.modal-footer { 	
+	clear: both; 
+} 
+
 /* Small devices (tablets, 768px and up) 
 
 Greater than 768 px, push logo left and tagline right. Alter 
