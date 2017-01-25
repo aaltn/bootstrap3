@@ -1,1 +1,1 @@
-Repository for the study of Bootstrap 3.
+I continue to study Bootstrap 3 - сreating a Thumbnail Gallery, Image Carousel & Forms.
