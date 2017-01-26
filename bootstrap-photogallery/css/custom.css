@@ -51,7 +51,18 @@
 } 
 .modal-footer { 	
 	clear: both; 
-} 
+}
+
+/* panel styling for the home page */
+
+.panel-primary .panel-heading {
+	background-color: #602F8D;
+	border-color: #602F8D;
+}
+.panel {
+	border-color: #602F8D;
+}
+
 
 /* Small devices (tablets, 768px and up) 
 
