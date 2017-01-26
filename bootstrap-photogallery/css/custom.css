@@ -63,6 +63,18 @@
 	border-color: #602F8D;
 }
 
+/* form styles */
+.form-group button {
+	margin-top: 10px;
+}
+form {
+	padding: 0 1em;
+}
+form .col-sm-2,
+form .col-sm-10 {
+	padding: 10px 0;
+	margin: 0;
+}
 
 /* Small devices (tablets, 768px and up) 
 
@@ -78,5 +90,9 @@ tagline font size, alignment, and padding for larger dimensions.
 		font-size: 2em;
 		text-align: right;
 		padding-top: 1.6em;
+	}
+	form {
+		width: 550px;
+		margin: 0 auto;		
 	}
 }
