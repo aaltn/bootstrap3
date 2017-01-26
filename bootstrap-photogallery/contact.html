@@ -109,8 +109,8 @@
 						</select>
 					</div>
 					<div class="form-group">
-						<label>Comments:</label>
-						<textarea name="comments"></textarea>
+						<label for="comments" class="control-label">Comments:</label>
+						<textarea name="comments" class="form-control" rows="3" data-toggle="tooltip" title="We welcome your feedback!" data-placement="bottom"></textarea>
 					</div>
 					<div class="form-group">
 						<label>
@@ -135,5 +135,8 @@
 	<!-- javascript -->
 	<script src="js/jquery-latest.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$("textarea").tooltip();
+	</script>
 </body>
 </html>
