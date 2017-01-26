@@ -43,9 +43,11 @@
 } 
 .modal-body .pull-left { 
 	padding-right: 1em; 
+	padding-bottom: 1em;
 } 
 .modal-body .pull-right { 
 	padding-left: 1em; 
+	padding-bottom: 1em;
 } 
 .modal-footer { 	
 	clear: both; 
