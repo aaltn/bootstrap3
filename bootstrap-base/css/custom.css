@@ -12,10 +12,11 @@ footer {
 }
 
 .glyphicon {
-	color: #3F2B22;
+	color: #3F2B22;	
 }
 
-.active .glyphicon {
+.active .glyphicon,
+.navbar .glyphicon {
 	color: #cdae51;
 }
 
